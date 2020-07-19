@@ -12,7 +12,7 @@ nltk.download('punkt')
 try:
     with open("data/conversation.json") as file:
         data = json.load(file)
-except FileNotFoundError:
+except FileNotFoundError: # Untuk debugging dan training, karena bila file ini dirun, bukan dari main.py, maka python akan mendeteksi 'data/conversation.json'
     with open("src/data/conversation.json") as file:
         data = json.load(file)
 
@@ -92,4 +92,6 @@ def sekantung_kata(s, kata):
 
     return numpy.array(kantung)
 
-# Model()
+# Untuk generate model baru bila data sudah diupdate
+if __name__ == '__main__':
+    Model()

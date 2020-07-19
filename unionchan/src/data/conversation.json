@@ -1,8 +1,14 @@
 {"intents": [
         {"tag": "salam",
-         "patterns": ["Hai", "Apa kabar?", "Ada orang disana?", "Halo", "Yo", "Lagi apa", "Hai union chan"],
+         "patterns": ["Hai", "Ada orang disana?", "Halo", "Yo", "Lagi apa", "Hai union chan"],
          "responses": ["Heyyyy", "Haloo", "Hai hai"],
          "context_set": ""
+        },
+        {
+          "tag": "kabar",
+          "patterns": ["Hai apa kabar?", "Kabar kamu gimana?", "Hai union chan apa kabar?", "Apa kabar?", "Kamu sehat?", "union chan kamu sehat?"],
+          "responses": ["Haiiii aku baik", "Haii, iya aku sehat, makasih", "Aku sehat kok, makasih", "Aku baik baik aja", "Haloo, aku sehat kok"],
+          "context_set": ""
         },
         {"tag": "perpisahan",
          "patterns": ["dadah", "Off", "off dulu ya", "Bai", "dahhh"],
@@ -22,9 +28,9 @@
         {
           "tag": "omongkasar",
           "patterns": [
-            "ngentot yuk","taiiiiiiiiiiii","dasar bodoh","kontooooooooool", "crot crot crotttt", "kontol lu union", "Tai kau", "memek", "Dasar memek", "Goblok", "Anjing", "Babi", "Pantek", "Jadi ngentot ga", "memek"
+            "Anjing lu", "Anjing lo", "Anjing kamu", "Kontol", "Bajingan", "Memek", "Babi lo", "Babi kamu", "Babi kau", "Dasar tai", "Tai", "sialan", "sialan lo", "Sialan kamu", "Ngentot", "Pantek"
           ],
-          "responses": ["Kasar banget sih :(", "Ih omongannya", "Jangan gitu dong", "Woiiiii", "Ehhh jaga bahasanya"],
+          "responses": ["Kasar banget sih :(", "Ih omongannya", "Jangan gitu dong", "Jangan ngomong gitulah","Sopan dikit dong", "Ehhh jaga bahasanya"],
           "context_set": ""
         },
         {
@@ -46,7 +52,7 @@
         {
           "tag": "Degenerate",
           "patterns": [
-            "Jadi pacar aku yuk", "Kamu mau jadi pacar aku?", "Jadi adik aku dong", "Aku pengen jadi pacarmu"
+            "Jadi pacar aku yuk", "Kamu mau jadi pacar aku?", "Jadi adik aku dong", "Aku pengen jadi pacarmu", "Kamu mau gak jadi adik aku", "Kamu mau jadi adikku?", "Kamu mau jadi pacar aku?"
           ],
           "responses": ["Maaf ya...", "Maaf gak bisa...", "Aku hargai kamu tapi aku gamau...", "Ga."],
           "context": ""
@@ -70,6 +76,16 @@
             "Aku suka chattan sama kamu", "Hobi aku chattan sama kamu", "Chattan smaa kamu dong"
           ],
           "context": ""
+        },
+        {
+          "tag": "pujian",
+          "patterns": [
+            "kamu cantik", "Lu cantik", "Lu cantik", "Lu hebat", "Lu keren", "Kamu keren", "Kamu emang jago"
+          ],
+          "responses": [
+            "Makasihhhh", "Makasih banyakk", "Ihhh jadi malu", "Makasih banyakkkk sebanyak banyaknya", "O/////O"
+          ],
+          "context":""
         }
    ]
 }

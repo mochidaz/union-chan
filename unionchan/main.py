@@ -46,12 +46,12 @@ class UnionChan:
 async def on_message(msg):
     await UnionChan().on_message_(msg)
 
-
+# Masih dalam pengembangan
 @client.command()
 async def nyalakan(ctx):
     await UnionChan().nyalakan_(ctx)
 
-
+# Masih dalam pengembangan
 @client.command()
 async def matikan(ctx):
     await UnionChan().matikan_(ctx)
