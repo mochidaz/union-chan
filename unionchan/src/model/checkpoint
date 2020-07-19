@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/rahman/PycharmProjects/unionchan/unionchan/src/model/model.tfl"
+all_model_checkpoint_paths: "/home/rahman/PycharmProjects/unionchan/unionchan/src/model/model.tfl"
