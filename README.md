@@ -18,7 +18,18 @@ Bila anda menggunakan Linux, saya berasumsi bahwa anda pasti sudah berpengalaman
 
 #### Debian/Ubuntu based
 ```
-sudo apt-get install git
+$ sudo apt-get install git
+```
+### RedHat/Fedora
+```
+$ sudo yum install git
+```
+### Arch/Manjaro
+```
+$ sudo pacman -S git
+```
+Kemudian untuk clone dan change directory:
+```
 git clone https://github.com/nama-anda/union-chan.git
 cd /path/ke/directory
 ```
