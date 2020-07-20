@@ -1,7 +1,7 @@
 {"intents": [
         {"tag": "salam",
-         "patterns": ["Hai", "Ada orang disana?", "Halo", "Yo", "Lagi apa", "Hai union chan"],
-         "responses": ["Heyyyy", "Haloo", "Hai hai"],
+         "patterns": ["Hai", "Ada orang disana?", "Halo", "Yo", "Lagi apa", "Hai union chan", "Hello"],
+         "responses": ["haii", "Haloo", "hai"],
          "context_set": ""
         },
         {
@@ -21,22 +21,14 @@
          "context_set": ""
         },
         {"tag": "nama",
-         "patterns": ["Kamu siapa?", "Nama kamu siapa?", "Kau siapa?"],
+         "patterns": ["Kamu siapa?", "Nama kamu siapa?", "Kau siapa?", "siapa kamu?", "lu siapa", "siapa lu", "siapa lo", "lau sokap"],
          "responses": ["Aku Union-chan!", "Ku Union chan!!"],
          "context_set": ""
         },
         {
-          "tag": "omongkasar",
-          "patterns": [
-            "Anjing lu", "Anjing lo", "Anjing kamu", "Kontol", "Bajingan", "Memek", "Babi lo", "Babi kamu", "Babi kau", "Dasar tai", "Tai", "sialan", "sialan lo", "Sialan kamu", "Ngentot", "Pantek"
-          ],
-          "responses": ["Kasar banget sih :(", "Ih omongannya", "Jangan gitu dong", "Jangan ngomong gitulah","Sopan dikit dong", "Ehhh jaga bahasanya"],
-          "context_set": ""
-        },
-        {
           "tag": "aktifitas",
           "patterns": [
-            "lagi apa?", "kamu lagi apa?", "lagi ngapain", "ngapain kamu?"
+            "lagi apa?", "kamu lagi apa?", "lagi ngapain", "ngapain kamu?", "sedang apa?", "sedaong ngapain?", "kamu lagi ngapain", "kamu sedang apa?", "kamu sedang ngapain?", "lagi ngapain kamu?", "lagi apa kamu?"
           ],
           "responses": ["Lagi chat sama kamu", "Ga lagi ngapa-ngapain kok", "Lagi diemm", "Lagi chat disini"],
           "context_set": ""
@@ -68,7 +60,7 @@
           "context": ""
         },
         {
-          "tag": "Pertanyaanumum",
+          "tag": "pertanyaanumum1",
           "patterns": [
             "Hobi kamu apa?", "Kamu hobinya apa?", "Lu hobinya apa?", "Hobilu apa?", "Kamu sukanya apa?", "Kamu suka apa?"
           ],
@@ -77,17 +69,7 @@
           ],
           "context": ""
         },
-        {
-          "tag": "pujian",
-          "patterns": [
-            "kamu cantik", "Lu cantik", "Lu cantik", "Lu hebat", "Lu keren", "Kamu keren", "Kamu emang jago"
-          ],
-          "responses": [
-            "Makasihhhh", "Makasih banyakk", "Ihhh jadi malu", "Makasih banyakkkk sebanyak banyaknya", "O/////O"
-          ],
-          "context":""
-        },
-        {
+          {
           "tag": "pertanaanumum2",
           "patterns": [
             "Kamu sukanya siapa", "Kamu suka siapa?", "Siapa yang kamu suka?", "Kamu suka sama siapa?"
@@ -106,6 +88,54 @@
             "Aku cinta semua teman-temanku!", "Aku cinta kamu sebagai temanku yang baik!", "Aku cinta semuanya karena semua adalah temanku!"
           ],
           "context": ""
+        },
+        {
+          "tag": "pujian",
+          "patterns": [
+            "kamu cantik", "Lu cantik", "Lu cantik", "Lu hebat", "Lu keren", "Kamu keren", "Kamu emang jago"
+          ],
+          "responses": [
+            "Makasihhhh", "Makasih banyakk", "Ihhh jadi malu", "Makasih banyakkkk sebanyak banyaknya", "O/////O"
+          ],
+          "context":""
+        },
+        {
+          "tag": "responpengguna",
+          "patterns": [
+            "oh", "oh begitu", "ohhhhhh", "gitu ya", "begitu ya", "gitu ternyata"
+          ],
+          "responses": [
+            "iyaaa", "yessss", "huuh", "uhmm", "huum"
+          ],
+          "context": ""
+        },
+        {
+          "tag": "panggil",
+          "patterns": [
+            "Union chan", "Union", "Oi union", "Oi union chan"
+          ],
+          "respones": [
+            "Ada apa??", "Apa??", "Kenapa?", "Hmmm?"
+          ],
+          "context": ""
+        },
+        {
+          "tag": "ketawa",
+          "patterns": [
+            "wkwk","awkwkwkakwkaw", "wkkwkwkwkw", "oawkoawkawokkaw", "wawkakwkakakaka", "aoksaoksokasoksko", "hahahahaha", "aoskaokoaskoask", "aokaokaokaokao", "aokwoakwaok", "wkwkwkwkwkkwkwkwkw", "wkwkwk", "awokawokwaokwa", "awko", "awkos", "owkaowkaokawaw", "AOWKAOWKOWKOWAK", "woakoOAWKOAWKOWAK", "wk", "aokw", "awoak"
+          ],
+          "responses": [
+            "wkwkwkk", "hahahaha", "awkwkwkwkk", ":laughing:"
+          ],
+          "context": ""
+        },
+        {
+          "tag": "omongankasar",
+          "patterns": [
+            "Anjing lu", "Anjing lo", "Anjing kamu", "Kontol", "Bajingan", "Memek", "Babi lo", "Babi kamu", "Babi kau", "Dasar tai", "Tai", "sialan", "sialan lo", "Sialan kamu", "Ngentot", "Pantek", "dasar", "jelek"
+          ],
+          "responses": ["Kasar banget sih :(", "Ih omongannya", "Jangan gitu dong", "Jangan ngomong gitulah","Sopan dikit dong", "Ehhh jaga bahasanya"],
+          "context_set": ""
         }
-   ]
+  ]
 }
