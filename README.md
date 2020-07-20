@@ -30,16 +30,16 @@ $ sudo pacman -S git
 ```
 Kemudian untuk clone dan change directory:
 ```
-git clone https://github.com/nama-anda/union-chan.git
-cd /path/ke/directory
+$ git clone https://github.com/nama-anda/union-chan.git
+$ cd /path/ke/directory
 ```
 Kemudian tambahkan data, kode bila anda berpengalaman, atau apaun yang menurut anda dapat berguna. Setelah itu, jalankan:
 ```
-git remote add origin https://github.com/nama-anda/union-chan.git
-git remote add upstream https://github.com/34gang/union-chan.git
-git add -A
-git commit -m "Commit Message, usahakan agar anda membuatnya dengan baik"
-git push origin master
+$ git remote add origin https://github.com/nama-anda/union-chan.git
+$ git remote add upstream https://github.com/34gang/union-chan.git
+$ git add -A
+$ git commit -m "Commit Message, usahakan agar anda membuatnya dengan baik"
+$ git push origin master
 ```
 Kemudian ajukan pull request.
 
