@@ -1,9 +1,11 @@
 from discord.ext import commands
-from unionchan.utils.utils import toString
-from unionchan.src.convertdata import sekantung_kata, kata, label, data, net
+from src.convertdata import sekantung_kata, kata, label, data, net
 import random
 import numpy
 import tflearn
+import sys
+
+args = sys.argv[1]
 
 model = tflearn.DNN(net)
 model.load('./src/model/model.tfl')
@@ -21,17 +23,22 @@ class UnionChan:
         content = msg.content
         channel = msg.channel
         sender = channel
+        debugchannel = client.get_channel('debug channel id')
 
-        if not author.bot:
-            results = model.predict([sekantung_kata(content, kata)])
-            results_index = numpy.argmax(results)
-            tag = label[results_index]
+        results = model.predict([sekantung_kata(content, kata)])
+        results_index = numpy.argmax(results)
+        tag = label[results_index]
 
-            for tg in data["intents"]:
-                if tg['tag'] == tag:
-                    responses = tg['responses']
+        for tg in data["intents"]:
+            if tg['tag'] == tag:
+                responses = tg['responses']
+        if args == '--debug':
+            if not author.bot and channel.id == debugchannel.id:
+                await sender.send(random.choice(responses))
 
-            await sender.send(random.choice(responses))
+        elif args == '--start':
+            if not author.bot:
+                await sender.send(random.choice(responses))
 
     async def nyalakan_(self, ctx):
         self.is_on = True

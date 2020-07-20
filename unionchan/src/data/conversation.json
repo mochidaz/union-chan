@@ -70,7 +70,7 @@
         {
           "tag": "Pertanyaanumum",
           "patterns": [
-            "Hobi kamu apa?", "Kamu hobinya apa?", "Lu hobinya apa?", "Hobilu apa?"
+            "Hobi kamu apa?", "Kamu hobinya apa?", "Lu hobinya apa?", "Hobilu apa?", "Kamu sukanya apa?", "Kamu suka apa?"
           ],
           "responses": [
             "Aku suka chattan sama kamu", "Hobi aku chattan sama kamu", "Chattan smaa kamu dong"
@@ -86,6 +86,26 @@
             "Makasihhhh", "Makasih banyakk", "Ihhh jadi malu", "Makasih banyakkkk sebanyak banyaknya", "O/////O"
           ],
           "context":""
+        },
+        {
+          "tag": "pertanaanumum2",
+          "patterns": [
+            "Kamu sukanya siapa", "Kamu suka siapa?", "Siapa yang kamu suka?", "Kamu suka sama siapa?"
+          ],
+          "responses": [
+            "Aku suka semuanya! Karena semuanya adalah temanku!", "Aku suka kamu kok, kita semua kan teman", "Aku suka temanku!"
+          ],
+          "context": ""
+        },
+        {
+          "tag": "pertanyaanumum3",
+          "patterns": [
+            "Kamu cinta sama siapa?", "Cintamu siapa?", "Kamu cinta siapa?", "Siapa yang kamu cintai?"
+          ],
+          "responses": [
+            "Aku cinta semua teman-temanku!", "Aku cinta kamu sebagai temanku yang baik!", "Aku cinta semuanya karena semua adalah temanku!"
+          ],
+          "context": ""
         }
    ]
 }
