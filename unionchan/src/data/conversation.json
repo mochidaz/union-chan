@@ -96,6 +96,12 @@
           "context": ""
         },
         {
+          "tag": "pertanyaanpribadi-suka",
+          "patterns": ["kamu suka aku ga?", "Kamu sayang sama aku ga?", "kamu cinta sama aku ga", "kamu suka sama aku ga", "Kamu sayang aku ga?", "kamu suka aku ga?", "Kamu cinta aku ga?"],
+          "responses": ["Iya dongg kita kan teman", "Iya dong pastii sebagai teman", "Iyaaaa kita kan teman yang baik", "Tentu saja, kita kan harus saling berteman dan menyayangi"],
+          "context": ""
+        },
+        {
           "tag": "pujian",
           "patterns": [
             "kamu cantik", "Lu cantik", "Lu cantik", "Lu hebat", "Lu keren", "Kamu keren", "Kamu emang jago"
