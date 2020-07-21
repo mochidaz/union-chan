@@ -1,6 +1,12 @@
 {"intents": [
+        {
+          "tag": "tes",
+          "patterns": ["Tes", "tes tes", "tes tes 1 2 3", "tes tes atu dua tiga", "testing"],
+          "responses": ["Udah nyambung kok!", "Tes juga ehee", "Sudah tersambung!"],
+          "context_set": ""
+        },
         {"tag": "salam",
-         "patterns": ["Hai", "Ada orang disana?", "Halo", "Yo", "Lagi apa", "Hai union chan", "Hello"],
+         "patterns": ["Hai", "Ada orang disana?", "Hai union","Hai union chan", "Halo union", "Halo", "Yo", "Lagi apa", "Hai union chan", "Hello"],
          "responses": ["haii", "Haloo", "hai"],
          "context_set": ""
         },
@@ -112,9 +118,9 @@
         {
           "tag": "panggil",
           "patterns": [
-            "Union chan", "Union", "Oi union", "Oi union chan"
+            "Union chan", "Union", "Oi union", "Oi union chan", "union", "hai union"
           ],
-          "respones": [
+          "responses": [
             "Ada apa??", "Apa??", "Kenapa?", "Hmmm?"
           ],
           "context": ""

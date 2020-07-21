@@ -23,7 +23,7 @@ class UnionChan:
         content = msg.content
         channel = msg.channel
         sender = channel
-        debugchannel = client.get_channel("debug channel id")
+        debugchannel = client.get_channel("DEBUG CHANNEL ID")
 
         results = model.predict([sekantung_kata(content, kata)])
         results_index = numpy.argmax(results)
