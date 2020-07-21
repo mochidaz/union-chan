@@ -70,14 +70,14 @@ net = tflearn.fully_connected(net, 8)
 net = tflearn.fully_connected(net, len(output[0]), activation="softmax")
 net = tflearn.regression(net)
 
-def Model():
-    model = tflearn.DNN(net)
+model = tflearn.DNN(net)
 
-    model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
-    try:
-        model.save("src/model/model.tfl")
-    except ValueError:
-        model.save("model/model.tfl")
+model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
+try:
+    model.save("src/model/model.tfl")
+except ValueError:
+    model.save("model/model.tfl")
+# model.load("./model/model.tfl")
 
 
 def sekantung_kata(s, kata):
@@ -93,7 +93,20 @@ def sekantung_kata(s, kata):
 
     return numpy.array(kantung)
 
+def chat():
+    while True:
+        content = str(input("Rahman: "))
+        if content == "dadah":
+            exit()
+        results = model.predict([sekantung_kata(content, kata)])
+        results_index = numpy.argmax(results)
+        tag = label[results_index]
+
+        for tg in data["intents"]:
+            if tg['tag'] == tag:
+                responses = tg['responses']
+        print("Union-chan: ",random.choice(responses))
 
 # Untuk generate model baru bila data sudah diupdate
 if __name__ == '__main__':
-    Main()
+    chat()
