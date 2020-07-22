@@ -96,4 +96,4 @@ def sekantung_kata(s, kata):
 
 # Untuk generate model baru bila data sudah diupdate
 if __name__ == '__main__':
-    Main()
+    Model()

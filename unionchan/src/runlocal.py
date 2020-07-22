@@ -72,12 +72,12 @@ net = tflearn.regression(net)
 
 model = tflearn.DNN(net)
 
-model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
-try:
-    model.save("src/model/model.tfl")
-except ValueError:
-    model.save("model/model.tfl")
-# model.load("./model/model.tfl")
+# model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
+# try:
+#     model.save("src/model/model.tfl")
+# except ValueError:
+#     model.save("model/model.tfl")
+model.load("./model/model.tfl")
 
 
 def sekantung_kata(s, kata):
@@ -95,7 +95,7 @@ def sekantung_kata(s, kata):
 
 def chat():
     while True:
-        content = str(input("Rahman: "))
+        content = str(input("Pengguna: "))
         if content == "dadah":
             exit()
         results = model.predict([sekantung_kata(content, kata)])

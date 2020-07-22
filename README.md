@@ -43,5 +43,8 @@ $ git push origin master
 ```
 Kemudian ajukan pull request.
 
+## Test dan Debug
+Untuk test dan debug, silahkan membaca panduan yang ada di folder [docs](docs)
+
 ## Lisensi
 Bot ini berada dibawah lisensi [GNU GPL 3.0](https://choosealicense.com/licenses/gpl-3.0/)

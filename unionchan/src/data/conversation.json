@@ -102,6 +102,14 @@
           "context": ""
         },
         {
+          "tag": "pertanyaanpribadi-setelahditolak1",
+          "patterns": [
+            "Kok kamu gitu sih?","Kok gitu kamu sama aku?", "Kok sama aku gitu sih", "Kok tega sih kamu"
+          ],
+          "respones": ["Kenapa?", "MEmangnya aku kenapa?", "Memangnya kenapa?", "Hmmm kenapa memang? Maaf kalau ada salah"],
+          "context": ""
+        },
+        {
           "tag": "pujian",
           "patterns": [
             "kamu cantik", "Lu cantik", "Lu cantik", "Lu hebat", "Lu keren", "Kamu keren", "Kamu emang jago"
@@ -119,6 +127,14 @@
           "responses": [
             "iyaaa", "yessss", "huuh", "uhmm", "huum"
           ],
+          "context": ""
+        },
+        {
+          "tag": "responpengguna2",
+          "patterns": [
+            "Njir jahat","Jahat njir", "Jahat lu", "Jahat lo", "Anjir jahat", "Jahat anjir"
+          ],
+          "responses": ["Kenapa emang?", "Kok jahat sih?", "Ihhhh aku ga jahat", "Aku kan ga jahatt"],
           "context": ""
         },
         {
