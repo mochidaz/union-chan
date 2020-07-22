@@ -32,21 +32,22 @@ class UnionChan:
         for tg in data["intents"]:
             if tg['tag'] == tag:
                 responses = tg['responses']
-        if args == '--debug':
-            if not author.bot and channel.id == debugchannel.id:
-                await sender.send(random.choice(responses))
+        if self.is_on:
+            if args == '--debug':
+                if not author.bot and channel.id == debugchannel.id:
+                    sender.send(random.choice(responses))
 
-        elif args == '--start':
-            if not author.bot:
-                await sender.send(random.choice(responses))
+            elif args == '--start':
+                if not author.bot:
+                    sender.send(random.choice(responses))
 
     async def nyalakan_(self, ctx):
         self.is_on = True
-        await ctx.send('Menyalakan bot...')
+        ctx.send('Menyalakan bot...')
 
     async def matikan_(self, ctx):
         self.is_on = False
-        await ctx.send('Mematikan bot...')
+        ctx.send('Mematikan bot...')
 
 
 @client.event

@@ -6,7 +6,7 @@
           "context_set": ""
         },
         {"tag": "salam",
-         "patterns": ["Hai", "Ada orang disana?", "Hai union","Hai union chan", "Halo union", "Halo", "Yo", "Lagi apa", "Hai union chan", "Hello"],
+         "patterns": ["Hai", "Ada orang disana?", "Hai union","Hai union chan", "Halo union", "Halo", "Yo", "Lagi apa", "Hai union chan", "Hello", "Halooooooo"],
          "responses": ["haii", "Haloo", "hai"],
          "context_set": ""
         },
@@ -106,13 +106,18 @@
           "patterns": [
             "Kok kamu gitu sih?","Kok gitu kamu sama aku?", "Kok sama aku gitu sih", "Kok tega sih kamu"
           ],
-          "respones": ["Kenapa?", "MEmangnya aku kenapa?", "Memangnya kenapa?", "Hmmm kenapa memang? Maaf kalau ada salah"],
+          "responses": ["Kenapa?", "Memangnya aku kenapa?", "Memangnya kenapa?", "Hmmm kenapa memang? Maaf kalau ada salah"],
           "context": ""
+        },
+        {
+          "tag": "pertanyaanbot",
+          "patterns": ["Kok kamu aneh sih?", "Kan bukan lagi bahas itu", "Respon yang bener dong", "Kok kamu ga jelas sih", "Kok kamu gajelas sih?", "Gajelas lo", "Gaje lo", "Gajelas", "Apasih gajelas"],
+          "responses": ["Maaf... Aku masih belum sempurna sebagai AI", "Maaf ya aku memang masih belum sempurna", "Maaf, aku belum sempurna. Tapi kalau kamu ingin menyempurnakanku, kamu boleh kontribusi di https://github.com/34gang/union-chan kok!", "Maaf ya :("]
         },
         {
           "tag": "pujian",
           "patterns": [
-            "kamu cantik", "Lu cantik", "Lu cantik", "Lu hebat", "Lu keren", "Kamu keren", "Kamu emang jago"
+            "kamu cantik", "Lu cantik", "Lu cantik", "Lu hebat", "Lu keren", "Kamu keren", "Kamu emang jago", "Kamu hebat ya", "Kamu mantap ya", "Kamu cantik ya", "Karena kamu cantik"
           ],
           "responses": [
             "Makasihhhh", "Makasih banyakk", "Ihhh jadi malu", "Makasih banyakkkk sebanyak banyaknya", "O/////O"
@@ -138,9 +143,21 @@
           "context": ""
         },
         {
+          "tag": "responpengguna3",
+          "patterns": ["Makasih", "Terima kasih", "Makasih banyak", "Terima kasih banyak"],
+          "responses": ["Sama-sama!", "Sama-sama eheee", "Sama sama hehe"],
+          "context": ""
+        },
+        {
+          "tag": "responpengguna4",
+          "patterns": ["Karena kamu baik", "Kamu baik ya", "Kamu keren ya", "Kamu hebat ya", "Karena kamu hebat", "Karena kamu keren", "Karena kamu pintar"],
+          "responses": ["Hehe makasihh", "Makasih banyakk", "Heheee", "Makasih! ^^"],
+          "context": ""
+        },
+        {
           "tag": "panggil",
           "patterns": [
-            "Union chan", "Union", "Oi union", "Oi union chan", "union", "hai union"
+            "Union chan", "Union", "Oi union", "Oi union chan", "union", "hai union", "gak", "ga"
           ],
           "responses": [
             "Ada apa??", "Apa??", "Kenapa?", "Hmmm?"
