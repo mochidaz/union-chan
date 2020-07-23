@@ -107,6 +107,6 @@ def chat():
                 responses = tg['responses']
         print("Union-chan: ",random.choice(responses))
 
-# Untuk generate model baru bila data sudah diupdate
+
 if __name__ == '__main__':
     chat()
