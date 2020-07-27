@@ -47,4 +47,4 @@ Kemudian ajukan pull request.
 Untuk test dan debug, silahkan membaca panduan yang ada di folder [docs](docs)
 
 ## Lisensi
-Bot ini berada dibawah lisensi [GNU GPL 3.0](https://choosealicense.com/licenses/gpl-3.0/)
+Bot ini berada dibawah lisensi [MIT](https://choosealicense.com/licenses/mit/)
