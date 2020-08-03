@@ -46,5 +46,9 @@ Kemudian ajukan pull request.
 ## Test dan Debug
 Untuk test dan debug, silahkan membaca panduan yang ada di folder [docs](docs)
 
+## TODO:
+- Menambah lebih, lebih banyak data
+- Convert ke tensorflow 2 dan keras
+
 ## Lisensi
 Bot ini berada dibawah lisensi [MIT](https://choosealicense.com/licenses/mit/)
