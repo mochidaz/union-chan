@@ -175,6 +175,13 @@
           "context": ""
         },
         {
+          "tag": "datainteraksi-waktu",
+          "patterns": [
+            "sekarang jam berapa?", "waktu sekarang", "jam berapa sekarang", "sekarang jam brp", "jam brp skrng", "jam brp sekarang", "skrng jam brp", "skrng jam berapa", "jam berapa skrng"
+          ],
+          "context": ""
+        },
+        {
           "tag": "omongankasar",
           "patterns": [
             "Anjing lu", "Anjing lo", "Anjing kamu", "Kontol", "Bajingan", "Memek", "Babi lo", "Babi kamu", "Babi kau", "Dasar tai", "Tai", "sialan", "sialan lo", "Sialan kamu", "Ngentot", "Pantek", "dasar", "jelek"

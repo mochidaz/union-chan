@@ -1,5 +1,5 @@
 from discord.ext import commands
-from src.convertdata import sekantung_kata, kata, label, data, net
+from utils.utils import sekantung_kata, kata, label, data, net
 import random
 import numpy
 import tflearn
@@ -8,7 +8,7 @@ import sys
 args = sys.argv[1]
 
 model = tflearn.DNN(net)
-model.load('./src/model/model.tfl')
+model.load('model/model.tfl')
 
 client = commands.Bot(command_prefix='!union ')
 

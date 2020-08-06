@@ -1,5 +1,6 @@
 __pycache__
 .idea
 commiter.py
-unionchan/src/data/datagenerator.py
-unionchan/src/model/checkpoint
+unionchan/data/datagenerator.py
+unionchan/model/checkpoint
+.vscode
