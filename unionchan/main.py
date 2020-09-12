@@ -15,13 +15,15 @@ client = commands.Bot(command_prefix='!union ')
 global is_on
 is_on = False
 
+debugchannel = 699041030476922890
+
 @client.event
 async def on_message(msg):
     author = msg.author
     content = msg.content
     channel = msg.channel
     sender = channel
-    debugchannel = client.get_channel("debug channel id")
+    debugmode = client.get_channel(debugchannel)
 
     results = model.predict([sekantung_kata(content, kata)])
     results_index = numpy.argmax(results)
@@ -37,7 +39,8 @@ async def on_message(msg):
     else:
         if is_on:
             if args == '--debug':
-                if not author.bot and channel.id == debugchannel.id:
+                if not author.bot and channel.id == debugmode.id:
+                    await sender.send(f"Kategori: {tag}")
                     await sender.send(random.choice(responses))
 
             elif args == '--start':
@@ -52,6 +55,9 @@ async def nyalakan(ctx):
     global is_on
     is_on = True
     await ctx.send("Menyalakan bot...")
+    if args == '--debug':
+        await ctx.send(f"Mode debug di channel {debugchannel}")
+        await ctx.send("Selamat debugging!")
 
 @client.command()
 async def matikan(ctx):
@@ -60,4 +66,4 @@ async def matikan(ctx):
     await ctx.send("Mematikan bot...")
 
 
-client.run('TOKEN')
+client.run('XXXX')
